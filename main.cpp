@@ -88,6 +88,7 @@ int main(int argc, char* argv[])
     bool game_over = false;
     while (!is_quit)
     {
+        fps_timer.start();
         while (SDL_PollEvent(&g_event) != 0)
         {
             if (g_event.type == SDL_QUIT)
